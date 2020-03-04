@@ -1,4 +1,4 @@
-package Q1_09_String_Rotation;
+package com.chap01.Q1_09_String_Rotation;
 
 public class Question {
 	public static boolean isSubstring(String big, String small) {

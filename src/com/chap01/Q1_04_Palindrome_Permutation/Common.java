@@ -1,4 +1,4 @@
-package Q1_04_Palindrome_Permutation;
+package com.chap01.Q1_04_Palindrome_Permutation;
 
 public class Common {
 

@@ -1,4 +1,4 @@
-package Q1_07_Rotate_Matrix;
+package com.chap01.Q1_07_Rotate_Matrix;
 
 import CtCILibrary.*;
 

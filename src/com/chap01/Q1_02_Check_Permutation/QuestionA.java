@@ -1,5 +1,9 @@
 package com.chap01.Q1_02_Check_Permutation;
 
+/*
+ * Given two string, write a method to determine if one string is permutation of other.
+ */
+
 public class QuestionA {	
 	public static String sort(String s) {
 		char[] content = s.toCharArray();

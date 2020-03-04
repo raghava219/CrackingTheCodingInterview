@@ -1,5 +1,10 @@
 package com.chap01.Q1_01_Is_Unique;
 
+/*
+ * Implmement an algorithm to determine a string has all unique charecters,
+ *  what if you are not supposed to use additional collection to solve this problem.
+ */
+
 public class QuestionA {
 	public static boolean isUniqueChars(String str) {
 		if (str.length() > 128) {

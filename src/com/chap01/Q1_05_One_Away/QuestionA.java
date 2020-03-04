@@ -1,4 +1,4 @@
-package Q1_05_One_Away;
+package com.chap01.Q1_05_One_Away;
 
 public class QuestionA {
 

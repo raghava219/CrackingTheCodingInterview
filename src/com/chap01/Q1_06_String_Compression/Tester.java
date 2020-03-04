@@ -1,4 +1,4 @@
-package Q1_06_String_Compression;
+package com.chap01.Q1_06_String_Compression;
 
 public class Tester {
 

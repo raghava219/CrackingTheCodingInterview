@@ -1,4 +1,10 @@
-package Q1_04_Palindrome_Permutation;
+package com.chap01.Q1_04_Palindrome_Permutation;
+
+/*
+ * Given a string check if it's a permutation of palindrom. A palindrom is a string which is same from forwards and backwords.
+ * A permutation is rearrangement of letters. A plindrom does not be restrictod to dictionary word.
+ */
+
 
 public class QuestionB {	
 

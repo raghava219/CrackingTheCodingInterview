@@ -1,4 +1,11 @@
-package Q1_03_URLify;
+package com.chap01.Q1_03_URLify;
+
+/*
+ * URIFy : Write a method to replace all spaces in the string with "%20". You may assume that string suffice spaces at the 
+ * end to hold the additional charecters.
+ */
+
+// TODO: Debug this solution to understand it further.
 
 import CtCILibrary.AssortedMethods;
 

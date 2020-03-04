@@ -1,7 +1,7 @@
 package CtCILibrary;
 
 import java.util.*;
-import java.awt.*;
+//import java.awt.*;
 
 public class AssortedMethods {
 	public static int randomInt(int n) {
@@ -177,13 +177,11 @@ public class AssortedMethods {
 		return buffer.toString();
 	}
 
-	public static String listOfPointsToString(ArrayList<Point> list) {
-		StringBuilder buffer = new StringBuilder();
-		for (Point p : list) {
-			buffer.append("(" + p.x + "," + p.y + ")");
-		}
-		return buffer.toString();
-	}
+	/*
+	 * public static String listOfPointsToString(ArrayList<Point> list) {
+	 * StringBuilder buffer = new StringBuilder(); for (Point p : list) {
+	 * buffer.append("(" + p.x + "," + p.y + ")"); } return buffer.toString(); }
+	 */
 
 	public static TreeNode randomBST(int N, int min, int max) {
 		int d = randomIntInRange(min, max);
