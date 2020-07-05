@@ -25,23 +25,24 @@ public class Tester {
                           { 16, 17, 18, 19, 20 },
                           { 21, 22, 23, 24, 25 }};
 
-        test(image1);
-        test(image2);
-        test(image3);
-        test(image4);
+        test(image1); // [[1, 2], [3, 4]]
+		/*
+		 * test(image2); test(image3); test(image4);
+		 */
     }
 
     private static void test(int[][] image) {
         System.out.println("Original image");
-        Functions.printImage(image);
+        //Functions.printImage(image);
 
         System.out.println("Rotated 90 degrees clockwise");
         RotateMatrix.rotate90clockwise(image);
         Functions.printImage(image);
 
-        System.out.println("Rotated ANOTHER 180 degrees clockwise");
-        RotateMatrix.rotate180(image); // rotates the already 90-degree rotated image.
-        Functions.printImage(image);
-        System.out.println();
+		/*
+		 * System.out.println("Rotated ANOTHER 180 degrees clockwise");
+		 * RotateMatrix.rotate180(image); // rotates the already 90-degree rotated
+		 * image. Functions.printImage(image); System.out.println();
+		 */
     }
 }

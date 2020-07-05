@@ -14,3 +14,12 @@ public class Tester {
         System.out.println(s1 + ", " + s2 + "  --> " + StringRotation.isRotation(s1, s2));
     }
 }
+
+/*
+*** Test 1.9: String Rotation
+
+waterbottle, erbottlewat  --> true
+, erbottlewat  --> false
+tooth, candy  --> false
+
+*/

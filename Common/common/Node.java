@@ -32,7 +32,8 @@ public class Node {
         }
         n.next = new Node(d);
     }
-
+    
+   
     public void appendToTail(Node nodeToPut) {
         Node n = this; // slick move
         while (n.next != null) {

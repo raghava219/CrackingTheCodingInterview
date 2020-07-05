@@ -6,7 +6,7 @@ public class Tester {
     public static void main(String[] args) {
         System.out.println("*** Test 8.6: Towers of Hanoi\n");
         int numTowers = 3;
-        int numDisks = 4; // can make this bigger
+        int numDisks = 2; // can make this bigger
         Tower[] towers = new Tower[numTowers];
         for (int i = 0; i < numTowers; i++) {
             towers[i] = new Tower(i); // don't forget. We have to do this too!

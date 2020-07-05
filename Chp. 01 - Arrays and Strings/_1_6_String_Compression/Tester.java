@@ -13,5 +13,18 @@ public class Tester {
         System.out.println("  Original string: " + original);
         String compressed = StringCompression.basicCompression(original);
         System.out.println("Compressed string: " + compressed + "\n");
+        
+        /*
+         * 
+  Original string: aabcccccaaa
+Compressed string: a2b1c5a3
+
+  Original string: abababa
+                   a1b1a1b1a1b1  
+Compressed string: abababa
+
+
+         */
+        
     }
 }

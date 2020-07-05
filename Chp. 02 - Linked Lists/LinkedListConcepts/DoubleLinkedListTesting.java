@@ -70,6 +70,10 @@ public class DoubleLinkedListTesting {
 		System.out.println(" \n After Removing at position 5, LinkedList contents ");
 		listObj.printList();
 		
+		listObj.reverse(listObj.getHeadNode());
+		System.out.println(" \n After Reversing Double Linked List ");
+		listObj.printList();
+		
 		
 	}
 

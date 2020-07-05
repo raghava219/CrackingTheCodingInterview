@@ -6,7 +6,10 @@ import common.Node;
 import common.ListFunctions;
 
 public class Palindrome {
+	
+	
     public static boolean palindrome(Node head) {
+    	
         if (head == null) {
             return false; // depends on our definition of a palindrome.
         }
@@ -14,13 +17,16 @@ public class Palindrome {
         // Reverse 2nd half of list
         Node slow = head;
         Node fast = head;
+        
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
+        
         if (fast != null) { // for lists with odd # of Nodes
             slow = slow.next;
         }
+        
         Node slowCenter = ListFunctions.reverseListIterative(slow);
 
         // compare 1st half of list to 2nd half

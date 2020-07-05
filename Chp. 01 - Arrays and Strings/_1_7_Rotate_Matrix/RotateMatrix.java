@@ -10,23 +10,32 @@ public class RotateMatrix {
             return;
         }
         n = image.length;
-        transpose(image);
+        transpose(image);//intermediate ->[[1, 3], [2, 4]]
         flipHorizontally(image);
     }
     
     private static void transpose(int[][] image) {
+    	
+    	// https://www.codeproject.com/Articles/792036/Ranges-and-Looping-with-IntStream
+    	
+		/*
+		 * IntStream.range(0, n) .forEach(row -> IntStream.range(row+1,n) .forEach(col
+		 * -> RotateMatrix :: swap(image, row, col, col, row)); 1 2   1 3
+		 *                                                      3 4   2 4
+		 */
+    	
         for (int row = 0; row < n; row++) {
             for (int col = row + 1; col < n; col++) {
-                swap(image, row, col, col, row);
-            }
+                swap(image, row, col, col, row); //swamp([[1,2],[3,4]], 0, 1, 1, 0) --> [[1, 3], [2, 4]]
+            }                                    
         }
     }
     
     private static void flipHorizontally(int[][] image) {
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < n / 2; col++) {
-                swap(image, row, col, row, n - 1 - col);
-            }
+                swap(image, row, col, row, n - 1 - col); // swap([[1,3],[2,4]],0,0,0,1) -->[[3,1],[2,4]] 
+            }                                            // swap([[3,1],[2,4]],1,0,1,1) -->[[3,1],[4,2]]  
         }
     }
 

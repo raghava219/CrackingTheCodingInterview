@@ -3,6 +3,7 @@
 package common;
 
 public class ListFunctions {
+	
     public static void printList(Node head) {
         if (head == null) {
             return;

@@ -7,6 +7,26 @@ public class DoubleLinkedListImpl {
 	private int size = 0;
 	
 	
+	public DLLNode getHeadNode() {
+		return headNode;
+	}
+
+	public void setHeadNode(DLLNode headNode) {
+		this.headNode = headNode;
+	}
+
+	public DLLNode getTailNode() {
+		return tailNode;
+	}
+
+	public void setTailNode(DLLNode tailNode) {
+		this.tailNode = tailNode;
+	}
+
+	public void setSize(int size) {
+		this.size = size;
+	}
+
 	public void addToFront(int data){
 		DLLNode newNode = new DLLNode(data);
 		newNode.setNext(headNode);
@@ -117,5 +137,29 @@ public class DoubleLinkedListImpl {
 		removedNode.setNext(null);
 		return removedNode;
 	}
+	
+	public DLLNode reverse(DLLNode head) {
+		if (head == null) {
+			return null;
+		}
+		
+		DLLNode current_node = head;
+		DLLNode new_head = head;
+		
+		while (current_node != null) {
+			
+			DLLNode prev = current_node.getPrevious();
+			
+			current_node.setPrevious(current_node.getNext());
+			current_node.setNext(prev);
+			
+			new_head = current_node;
+			
+			current_node =  current_node.getPrevious();
+		}
+		
+		return new_head;
+	}
+	
 	
 }

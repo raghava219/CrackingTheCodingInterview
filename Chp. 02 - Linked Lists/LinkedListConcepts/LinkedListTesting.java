@@ -1,5 +1,7 @@
 package LinkedListConcepts;
 
+import common.Node;
+
 public class LinkedListTesting {
 
 	public static void main(String[] args) {
@@ -7,8 +9,6 @@ public class LinkedListTesting {
 		int data1 = 40;
 		int data2 = 7;
 		int data3 = 15;
-		
- 
 		
 		LinkedListImpl listObj = new LinkedListImpl();
 		
@@ -70,7 +70,9 @@ public class LinkedListTesting {
 		System.out.println(" \n After Removing at position 5, LinkedList contents ");
 		listObj.printList();
 		
-		
+		System.out.println(" \n Converting Array to linkedList ");
+		listObj.convertArrayToLinkedList(new int[]{ 3, 4, 5, 6 });
+		listObj.printList();
 	}
 
 }

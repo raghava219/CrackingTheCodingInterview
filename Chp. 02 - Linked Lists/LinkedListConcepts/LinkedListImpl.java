@@ -1,5 +1,7 @@
 package LinkedListConcepts;
 
+import common.Node;
+
 public class LinkedListImpl { 
 	
 	private ListNode headNode = null;
@@ -13,6 +15,13 @@ public class LinkedListImpl {
 		size++;
 	}
 
+	public void convertArrayToLinkedList(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            this.addToFront(array[i]);
+        }
+    }
+	
+	
 	public int getSize(){
 		return size;
 	}

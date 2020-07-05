@@ -26,5 +26,31 @@ public class Tester {
         ZeroMatrix.solution1(matrix);
         Functions.printImage(matrix);
         System.out.println();
+        
+        /*
+         * Original matrix
+			 1  2  3  1 
+			 4  5  6  0 
+			 0  5  3  0 
+			
+			Zero out necessary rows/columns
+			 0  2  3  0 
+			 0  0  0  0 
+			 0  0  0  0 
+			
+			
+			Original matrix
+			 1  2  3  1 
+			 4  5  6  0 
+			 0  5  3  0 
+			
+			Zero out necessary rows/columns
+			 0  2  3  0 
+			 0  0  0  0 
+			 0  0  0  0 
+         * 
+         * 
+         */
+        
     }
 }
